@@ -5,6 +5,9 @@
   "repository": "https://github.com/brunowe/react-frontend",
   "author": "Bruno Weber de Castro <brunoweber500@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode development"
+  },
   "devDependencies": {
     "@babel/core": "^7.8.4",
     "@babel/preset-env": "^7.8.4",
