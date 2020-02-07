@@ -1,10 +1,16 @@
 /* --------------------------------- IMPORTS ---------------------------------*/
-import React from "react";
-import "./App.css";
-import TechList from "./components/TechList";
+import React, { Component } from "react";
 /* --------------------------------- CONTENT ---------------------------------*/
-function App() {
-  return <TechList />;
+class TechList extends Component {
+  render() {
+    return (
+      <ul>
+        <li>Node.js</li>
+        <li>ReactJS</li>
+        <li>React Native</li>
+      </ul>
+    );
+  }
 }
 /* --------------------------------- EXPORTS ---------------------------------*/
-export default App;
+export default TechList;
