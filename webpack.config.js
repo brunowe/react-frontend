@@ -1,4 +1,4 @@
-/* Escolhe a melho "/" para o caminho do arquivo, dependendo do SO */
+/* Escolhe a melhor "/" para o caminho do arquivo, dependendo do SO */
 const path = require("path");
 
 module.exports = {
@@ -24,6 +24,12 @@ module.exports = {
       {
         test: /\.css$/,
         use: [{ loader: "style-loader" }, { loader: "css-loader" }]
+      },
+      {
+        test: /.*\.(gif|png|jpe?g)$/i,
+        use: {
+          loader: "file-loader"
+        }
       }
     ]
   }
