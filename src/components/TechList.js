@@ -11,7 +11,10 @@ class TechList extends Component {
   };
   handleSubmit = e => {
     e.preventDefault();
-    this.setState({ techs: [...this.state.techs, this.state.newTech] });
+    this.setState({
+      techs: [...this.state.techs, this.state.newTech],
+      newTech: ""
+    });
   };
   render() {
     return (
