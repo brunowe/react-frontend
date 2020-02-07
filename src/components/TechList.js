@@ -2,12 +2,15 @@
 import React, { Component } from "react";
 /* --------------------------------- CONTENT ---------------------------------*/
 class TechList extends Component {
+  state = {
+    techs: ["Node.js", "ReactJS", "React Native"]
+  };
   render() {
     return (
       <ul>
-        <li>Node.js</li>
-        <li>ReactJS</li>
-        <li>React Native</li>
+        {this.state.techs.map(tech => (
+          <li key={tech}>{tech}</li>
+        ))}
       </ul>
     );
   }
