@@ -1,7 +1,8 @@
 /* --------------------------------- IMPORTS ---------------------------------*/
 import React from "react";
-import { render } from "react-dom";
-import App from "./App";
 /* --------------------------------- CONTENT ---------------------------------*/
-render(<App />, document.getElementById("app"));
+function App() {
+  return <h1>Hello LMP</h1>;
+}
 /* --------------------------------- EXPORTS ---------------------------------*/
+export default App;
