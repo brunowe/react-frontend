@@ -7,6 +7,23 @@ class TechList extends Component {
     newTech: "",
     techs: ["Node.js", "ReactJS", "React Native"]
   };
+  /* Executa sempre que o componente aparece em tela */
+  componentDidMount() {
+    const techs = localStorage.getItem("techs");
+
+    if (techs) {
+      this.setState({ techs: JSON.parse(techs) });
+    }
+  }
+  /* Executa sempre que houver alteracoes nas props ou estados */
+  componentDidUpdate() {
+    if (prevState.test != this.state.techs) {
+      localStorage.setItem("techs", JSON.stringify(this.state.techs));
+    }
+  }
+  handleInputChange = e => {
+    this.setState({ newTech: e.target.value });
+  };
   handleInputChange = e => {
     this.setState({ newTech: e.target.value });
   };
