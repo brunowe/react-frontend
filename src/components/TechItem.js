@@ -2,12 +2,12 @@
 import React from "react";
 
 /* --------------------------------- CONTENT ---------------------------------*/
-function TechItem() {
+function TechItem({ tech, onDelete }) {
   return (
     <li>
       {tech}
-      <button onClick={() => this.handleDelete(tech)} type="button">
-        Remove Item
+      <button onClick={onDelete} type="button">
+        Remove
       </button>
     </li>
   );
