@@ -1,25 +1,25 @@
 {
   "name": "react-frontend",
   "version": "1.0.0",
-  "main": "index.js",
   "repository": "https://github.com/brunowe/react-frontend",
   "author": "Bruno Weber de Castro <brunoweber500@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --mode production",
-    "dev": "webpack-dev-server --mode development"
+    "build": "vite build",
+    "dev": "vite",
+    "preview": "vite preview",
+    "audit": "pnpm audit"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.4",
-    "@babel/preset-env": "^7.8.4",
-    "@babel/preset-react": "^7.8.3",
-    "babel-loader": "^8.0.6",
-    "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.10.3"
+    "vite": "8.3.4"
   },
   "dependencies": {
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "private": true,
+  "packageManager": "pnpm@11.25.0",
+  "engines": {
+    "node": "^22.13.0 || >=24.0.0"
   }
 }
